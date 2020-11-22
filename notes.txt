@@ -1,0 +1,101 @@
+procedural generation of the world
+
+documentation:
+- World
+  - the world is a sphere represented as a 2D plane
+  - each cell of the plane is represented by a position in the 2d array implementation
+  - each cell is its own biosphere 
+
+- Terrain Types
+https://upload.wikimedia.org/wikipedia/commons/c/cb/Lifezones_Pengo.svg
+dimensions: 
+- potential evapotranspiration ratio
+  - 0.125 (1) - 32
+- annual precipitation 
+  - 62.5 (500) - 16000 mm
+- critical temperature line
+  - < 0C - 24C+
+- humidity
+  - super-arid, perarid, ardi, semi-arid, sub-humid, humid, per-humid, super-humid
+
+tropical zone
+- sun nearly vertical
+- high temps, more evaporation, moist air, dense cloud cover
+
+subtropics
+- sun vertical
+- thin cloud cover, less moisture, most deserts are here, can be cool and moist during winter
+
+temperate zone
+- sun is at a slight angle
+- cooler than subtropics, less extreme temp, regular distribution of rain over year, longer vegetation
+
+cold zone
+- sun has a very flat angle 
+
+Classes:
+Polar desert
+Subpolar dry tundra
+Subpolar moist tundra
+Subpolar wet tundra
+Subpolar rain tundra
+Boreal desert
+Boreal dry scrub
+Boreal moist forest
+Boreal wet forest
+Boreal rain forest
+Cool temperate desert
+Cool temperate desert scrub
+Cool temperate steppe
+Cool temperate moist forest
+Cool temperate wet forest
+Cool temperate rain forest
+Warm temperate desert
+Warm temperate desert scrub
+Warm temperate thorn scrub
+Warm temperate dry forest
+Warm temperate moist forest
+Warm temperate wet forest
+Warm temperate rain forest
+Subtropical desert
+Subtropical desert scrub
+Subtropical thorn woodland
+Subtropical dry forest
+Subtropical moist forest
+Subtropical wet forest
+Subtropical rain forest
+Tropical desert
+Tropical desert scrub
+Tropical thorn woodland
+Tropical very dry forest
+Tropical dry forest
+Tropical moist forest
+Tropical wet forest
+Tropical rain forest
+
+- Weather Types
+  - rain
+  - snow
+  - sunny
+  - overcast
+
+
+what is the axis of the world's rotation in relation to its sun?
+
+Season Types:
+- winter, fall, summer, spring
+
+
+givens:
+world size
+
+# logic
+- randomly start in a cell and build out from there
+  - start with the terrain
+    - the starting terrain dictates the terrain around it 
+4
+
+
+
+# implementation
+WORLD_SIZE = 100
